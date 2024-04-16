@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int opciones_menu;
+int main()
+{
+    
+    cout<<"Bienvenidos, programa de prueva 1"<<endl;
+    cout<<"digite el numero correspondiente a la opcion deseada"<<endl;
+    
+    
+
+    return 0;
+}
