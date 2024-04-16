@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int opciones_menu;
+int opciones_menu, numero1,numero2,resultado;
 bool fin_menu=1;
 int main()
 {
@@ -19,19 +19,24 @@ int main()
         switch(opciones_menu){
             case 1 :
             {
-            cout<<"1. suma"<<endl;
+            cout<<"ingrese dos numeros para realizar la suma entre ellos"<<endl;
+            cin>>numero1;
+            cin>>numero2;
+            resultado=numero1+numero2;
+            cout<<"la suma entre "<<numero1 <<" y "<<numero2 <<" es: "<<resultado<<endl;
+            
             }break;
             case 2 :
             {
-            cout<<"1. suma"<<endl;
+            cout<<"ingrese dos numeros para realizar la resta entre ellos"<<endl;
             }break;
             case 3 :
             {
-            cout<<"1. suma"<<endl;
+            cout<<"ingrese dos numeros para realizar la mjultiplicacion entre ellos"<<endl;
             }break;
             case 4 :
             {
-            cout<<"1. suma"<<endl;
+            cout<<"ingrese dos numeros para realizar la division entre ellos"<<endl;
             }break;
             case 5 :
             {
@@ -41,12 +46,9 @@ int main()
             default:
             {
             cout<<"el dato ingresado no es valido, ingrese un numero valido"<<endl;
-            
             }break;
         }
     }
-
-    
 
     return 0;
 }
