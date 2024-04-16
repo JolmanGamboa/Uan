@@ -1,12 +1,51 @@
 #include <iostream>
 using namespace std;
 int opciones_menu;
+bool fin_menu=1;
 int main()
 {
     
     cout<<"Bienvenidos, programa de prueva 1"<<endl;
-    cout<<"digite el numero correspondiente a la opcion deseada"<<endl;
-    
+
+    while(fin_menu==1)
+    {
+        cout<<"digite el numero correspondiente a la opcion deseada"<<endl
+        <<"1. suma"<<endl
+        <<"2. resta"<<endl
+        <<"3. division"<<endl
+        <<"4. multiplicacion"<<endl
+        <<"5. salir"<<endl;
+        cin >> opciones_menu;
+        switch(opciones_menu){
+            case 1 :
+            {
+            cout<<"1. suma"<<endl;
+            }break;
+            case 2 :
+            {
+            cout<<"1. suma"<<endl;
+            }break;
+            case 3 :
+            {
+            cout<<"1. suma"<<endl;
+            }break;
+            case 4 :
+            {
+            cout<<"1. suma"<<endl;
+            }break;
+            case 5 :
+            {
+            cout<<"gracias por usar el programa"<<endl;
+            fin_menu= 0;
+            }break;
+            default:
+            {
+            cout<<"el dato ingresado no es valido, ingrese un numero valido"<<endl;
+            
+            }break;
+        }
+    }
+
     
 
     return 0;
